@@ -17,6 +17,16 @@ html {
 body{
     scroll-behavior: smooth !important;
 }
+body::-webkit-scrollbar{
+    width: 7px;
+    background: var(--blue_light);
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--blue);
+    border-radius: 15px;
+}
+
+
 .background--one{
     background: url(../img/backgrounds/bg1.jpg) no-repeat center center;
     background-size: cover;
