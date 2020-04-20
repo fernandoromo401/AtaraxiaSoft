@@ -1,5 +1,6 @@
 :root{
     --white: #ffffff;
+    --white-trans: rgba(255,255,255,0.5);
     --white_hover: hsl(226, 38%, 87%);
     --nav: rgb(0,106,160,0.8);
     --nav_hover: rgb(1,71,130);
@@ -13,6 +14,11 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x:hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 body{
     scroll-behavior: smooth !important;
@@ -66,6 +72,41 @@ body::-webkit-scrollbar-thumb{
     height: 100vh;
     scroll-behavior: smooth !important;
 }
+.presentation--transition{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.presentation--transition-2{
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+.presentation--transition-3{
+    animation-duration: 5s;
+    animation-name: slidein2;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slidein2 {
+    from {
+      margin-left: 100%;
+      width: 306px
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 306px;
+    }
+  }
 .presentation--info{
     padding-top: 24%;
     width: 59%;
@@ -86,6 +127,23 @@ body::-webkit-scrollbar-thumb{
     width: 60px;
     height: 30px;
 }
+.presentation--arrow-img{
+    width: 100%;
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
 
 /* Button */
 
@@ -107,6 +165,13 @@ body::-webkit-scrollbar-thumb{
     color: var(--white);
     background-color: var(--trans);
     border: none;
+}
+.button-form{
+    font-size: 16px;
+    width: 250px;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 35px;
 }
 
 /* About */
@@ -148,10 +213,11 @@ body::-webkit-scrollbar-thumb{
 .item{
     align-items: center;
     color: var(--white);
-    text-align: center;
-    
+    text-align: center;  
 }
-
+.item--title{
+    font-size: 24px !important;
+}
 .item--icons{
     height: 227px;
     text-align: center;
@@ -272,4 +338,66 @@ body::-webkit-scrollbar-thumb{
 .item-service--description{
     margin-top: 30px;
     text-align: justify;
+}
+
+/* contact */
+.contact{
+    background: url(../img/backgrounds/bg2.jpg) no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    height: 1565px;
+    padding: 75px 0;
+}
+.contact--header{
+    text-align: center;
+}
+.contact--title{
+    font-size: 52px;
+    color: var(--white) !important;
+}
+.contact--description{
+    font-size: 24px;
+    color: var(--white);
+    margin-top: 35px;
+}
+.contact--form{
+    margin-right:auto;
+}
+.contact--form-data{
+    margin-top: 70px;
+    margin-right:auto;
+}
+.contact--input{
+    color: var(--white);
+}
+.contact--input-2{
+    border-radius: 5px;
+    background-color: var(--white-trans);
+    border: none;
+    transition: all 1s ease;
+}
+.contact--input-3{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--white-trans);
+    border: none;
+    transition: all 1s ease;
+    resize: none;
+    height: 135px;
+    overflow-y: scroll;
+}
+.contact--input-3::-webkit-scrollbar{
+    width: 7px;
+    background: var(--white-trans);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.contact--input-3::-webkit-scrollbar-thumb{
+    background: var(--blue);
+    border-radius: 15px;
+}
+.contact--center{
+    text-align: center;
 }
