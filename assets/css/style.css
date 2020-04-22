@@ -41,6 +41,14 @@ body::-webkit-scrollbar-thumb{
     -o-background-size: cover;
     height: 1565px;
 }
+.background--two{
+    background: url(../img/backgrounds/bg2.jpg) no-repeat center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    height: 1140px;
+}
 /* Navigation */
 
 .navigation{
@@ -342,12 +350,6 @@ body::-webkit-scrollbar-thumb{
 
 /* contact */
 .contact{
-    background: url(../img/backgrounds/bg2.jpg) no-repeat center center;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    height: 1565px;
     padding: 75px 0;
 }
 .contact--header{
@@ -400,4 +402,91 @@ body::-webkit-scrollbar-thumb{
 }
 .contact--center{
     text-align: center;
+}
+
+/* Mision */
+
+.mision{
+    padding: 40px 0;
+    height: auto;
+}
+.mision--title{
+    font-size: 52px;
+}
+
+
+/* item-mision */
+.item-mision{
+    width: 40%;
+    height: 150px;
+    margin-top: 70px;
+    margin: 40px 0;
+}
+.item-mision--img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 0px;
+    background-color: var(--blue_light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.item-mision--img:hover{
+    background-color: var(--blue);
+}
+.item-mision--img img{
+    width: 70%;
+}
+.item-mision--dates{
+    text-align: left;
+    margin-left: 15px;
+}
+.item-mision--title{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.item-mision--description{
+    display: flex;
+}
+
+.footer{
+    background-color: var(--white-trans);
+    height: 240px;
+    border-top: 2px var(--white) solid;
+    border-bottom: 2px var(--white) solid;
+}
+.footer--body{
+    padding: 35px 0;
+}
+.footer--logo{
+    width: 120px !important;
+    padding: 15px 0;
+}
+.footer--text{
+    color: var(--white);
+    width: 80%;
+    transition: 1s ease;
+    text-decoration: none;
+}
+.footer--link{
+    color: var(--white);
+    text-decoration: underline;
+    transition: 1s ease;
+}
+.footer--link:hover{
+    color: var(--item1);
+}
+.footer-follow{
+    color: var(--white);
+}
+.copyright--text{
+    color: var(--white);
+    margin: 25px 0;
+}
+.footer--item{
+    padding: 5px;
 }

@@ -1,0 +1,96 @@
+@media (max-width: 450px) { 
+    .presentation{
+        display: flex;
+        align-items: center;
+    }
+    .presentation--info{
+        width: 100%;
+    }
+    .presentation--title{
+        font-size: 36px !important;
+        width: 100%;
+    }
+    .presentation--subtitle{
+        font-size: 18px;
+        width: 100%;
+    }
+    .button{
+        width: 180px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .presentation--transition{
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    .presentation--transition-2{
+        animation-duration: 4s;
+        animation-name: slidein;
+    }
+    .presentation--transition-3{
+        animation-duration: 5s;
+        animation-name: slidein2;
+    }
+      
+      @keyframes slidein {
+        from {
+          width: 100%
+        }
+      
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes slidein2 {
+        from {
+          width: 180px
+        }
+      
+        to {
+          width: 180px;
+        }
+      }
+
+    .presentation--arrow{
+        position: absolute;
+        bottom: 30px;
+        left: 45%;
+        width: 60px;
+        height: 30px;
+    }
+    .about--title{
+        font-size: 36px;
+    }
+    .about--description{
+        font-size: 18px;
+    }
+    .background--one{
+        height: 2000px;
+    }
+    .item--icons{
+        height: 120px;
+    }
+    .item--icon1{
+        display: none;
+    }
+    .item--icon2{
+        width: 100px;
+        height: 100px;
+    }
+    .item--img1{
+        width: 60px;
+    }
+    .item--img2{
+        width: 70px;
+    }
+    .item--img3{
+        width: 70px;
+    }
+    .item--img4{
+        width: 60px;
+    }
+    .line{
+        display: none;
+    }
+
+}
