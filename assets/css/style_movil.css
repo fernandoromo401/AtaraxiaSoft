@@ -64,9 +64,6 @@
     .about--description{
         font-size: 18px;
     }
-    .background--one{
-        height: 2000px;
-    }
     .item--icons{
         height: 120px;
     }
@@ -92,5 +89,92 @@
     .line{
         display: none;
     }
-
+    .service--title{
+        font-size: 36px;
+    }
+    .service--description{
+        font-size: 18px;
+    }
+    .item-service{
+        text-align: center;
+    }
+    .item-service--logo{
+        float: none;
+        width: 100%;
+    }
+    .item-service--title{
+        float: none;
+        width: 100%;
+    }
+    .item-service--description{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .mision--title{
+        font-size: 36px;
+    }
+    .item-mision--img{
+        width: 75px;
+        height: 75px;
+        display: inline-block;
+    }
+    .item-mision--img img{
+        width: 50px;
+        position: relative;
+        top: 10px;
+    }
+    .item-mision{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .item-mision--dates{
+        margin: 0;
+        text-align: center;
+    }
+    .item-mision--logo{
+        text-align: center !important;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .none{
+        display: none;
+    }
+    .ml-5{
+        margin-left: 0 !important;
+    }
+    .contact--title{
+        font-size: 36px;
+    }
+    .contac--description{
+        font-size: 18px;
+    }
+    .footer{
+        padding: 10px;
+        text-align: center;
+    }
+    .footer--link-div{
+        width: 100%;
+    }
+    .footer--link{
+        text-transform: uppercase;
+    }
+    .footer--logo{
+        width: 200px;
+        padding: 25px;
+    }
+    .footer--body{
+        padding: 5px 0;
+    }
+    .footer--text2{
+        display: none;
+    }
+    .footer--text{
+        width: 100%;
+    }
+    .copyright--text{
+        margin: 0;
+    }
 }
