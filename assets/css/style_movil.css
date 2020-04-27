@@ -177,4 +177,11 @@
     .copyright--text{
         margin: 0;
     }
+    .navigation--mobile{
+        background-color: var(--nav_hover) !important;
+        text-align: center;
+    }
+    .popup{
+        max-width: 100%;
+    }
 }
