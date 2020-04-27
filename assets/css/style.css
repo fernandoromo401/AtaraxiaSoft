@@ -63,10 +63,6 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--nav_hover) !important;
     transition: all 1s ease;
 }
-.navigation--mobile{
-    background-color: var(--nav_hover) !important;
-    text-align: center;
-}
 .navigation--logo{
     width: 166px;
     height: 36px;
