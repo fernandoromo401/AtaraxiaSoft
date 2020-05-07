@@ -71,6 +71,7 @@ body::-webkit-scrollbar-thumb{
 }
 .navigation--link{
     color: var(--white) !important;
+    width: 160px !important;
 }
 .navigation--link:hover{
     color: var(--white_hover) !important;
